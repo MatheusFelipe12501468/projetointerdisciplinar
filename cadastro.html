@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro | Bella Pizza</title>
+  <link rel="icon" href="logo.svg">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body data-pagina="cadastro">
+  <header class="topo">
+    <div class="container topo-conteudo">
+      <a href="index.html" class="logo"><img src="logo.svg" alt="Logo Bella Pizza"> Bella <span>Pizza</span></a>
+      <button class="tema-botao" id="temaBotao" title="Mudar tema">☾</button>
+      <button class="menu-botao" id="menuBotao" title="Menu">☰</button>
+      <nav class="menu" id="menu">
+        <a href="index.html">Início</a>
+        <a href="produtos.html">Cardápio</a>
+        <a href="pedidos.html">Meus pedidos</a>
+        <a href="carrinho.html">Carrinho <span class="contador" id="contadorCarrinho" hidden>0</span></a>
+        <div class="menu-conta" id="menuVisitante">
+          <a href="login.html" class="botao botao-contorno">Login</a>
+          <a href="cadastro.html" class="botao">Cadastro</a>
+        </div>
+        <div class="menu-conta" id="menuLogado" hidden>
+          <a href="perfil.html" class="botao botao-contorno" id="linkPerfil">Meu perfil</a>
+          <button class="botao-texto" id="botaoSair">Sair</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="pagina-form">
+      <div class="container">
+        <div class="caixa-form caixa-form-larga">
+          <h1>Criar conta</h1>
+          <p>Preencha seus dados para fazer pedidos. Só o complemento é opcional.</p>
+
+          <form id="formCadastro">
+            <h2 class="grupo-titulo">Dados pessoais</h2>
+            <div class="campo">
+              <label for="nome">Nome completo</label>
+              <input type="text" id="nome" minlength="3" maxlength="100" required>
+            </div>
+            <div class="linha-campos">
+              <div class="campo">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" maxlength="100" required>
+              </div>
+              <div class="campo">
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" maxlength="15" data-mascara="telefone" placeholder="(00) 00000-0000" pattern="\(\d{2}\) \d{4,5}-\d{4}" title="Digite o telefone com DDD" required>
+              </div>
+            </div>
+            <div class="campo">
+              <label for="senha">Senha</label>
+              <input type="password" id="senha" minlength="4" maxlength="100" required>
+              <span class="dica">Mínimo de 4 caracteres.</span>
+            </div>
+
+            <h2 class="grupo-titulo">Endereço de entrega</h2>
+            <div class="linha-campos">
+              <div class="campo">
+                <label for="cep">CEP</label>
+                <input type="text" id="cep" maxlength="9" data-mascara="cep" placeholder="00000-000" pattern="\d{5}-\d{3}" title="Digite os 8 números do CEP" required>
+              </div>
+              <div class="campo">
+                <label for="cidade">Cidade</label>
+                <input type="text" id="cidade" maxlength="50" required>
+              </div>
+            </div>
+            <div class="campo">
+              <label for="rua">Rua / Avenida</label>
+              <input type="text" id="rua" maxlength="100" required>
+            </div>
+            <div class="linha-campos linha-campos-3">
+              <div class="campo">
+                <label for="numero">Número</label>
+                <input type="text" id="numero" maxlength="6" data-mascara="numero" required>
+              </div>
+              <div class="campo">
+                <label for="complemento">Complemento <span class="opcional">(opcional)</span></label>
+                <input type="text" id="complemento" maxlength="40">
+              </div>
+              <div class="campo">
+                <label for="bairro">Bairro</label>
+                <input type="text" id="bairro" maxlength="50" required>
+              </div>
+            </div>
+
+            <button type="submit" class="botao botao-grande botao-bloco">Criar conta</button>
+          </form>
+
+          <p class="link-form">Já tem conta? <a href="login.html">Entrar</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container rodape-conteudo">
+      <div>
+        <h3>Bella Pizza</h3>
+        <p>Pizzas artesanais com massa de fermentação natural, ingredientes selecionados e entrega rápida.</p>
+      </div>
+      <div>
+        <h3>Navegação</h3>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="produtos.html">Cardápio</a></li>
+          <li><a href="carrinho.html">Carrinho</a></li>
+          <li><a href="pedidos.html">Meus pedidos</a></li>
+          <li><a href="perfil.html">Meu perfil</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Atendimento</h3>
+        <ul>
+          <li>Todos os dias</li>
+          <li>18h às 23h30</li>
+          <li><a href="cadastro.html">Criar conta</a></li>
+          <li><a href="login.html">Entrar</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container rodape-final">© 2026 Bella Pizza — Projeto Interdisciplinar</div>
+  </footer>
+</body>
+</html>

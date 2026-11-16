@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrinho | Bella Pizza</title>
+  <link rel="icon" href="logo.svg">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body data-pagina="carrinho">
+  <header class="topo">
+    <div class="container topo-conteudo">
+      <a href="index.html" class="logo"><img src="logo.svg" alt="Logo Bella Pizza"> Bella <span>Pizza</span></a>
+      <button class="tema-botao" id="temaBotao" title="Mudar tema">☾</button>
+      <button class="menu-botao" id="menuBotao" title="Menu">☰</button>
+      <nav class="menu" id="menu">
+        <a href="index.html">Início</a>
+        <a href="produtos.html">Cardápio</a>
+        <a href="pedidos.html">Meus pedidos</a>
+        <a href="carrinho.html" class="ativo">Carrinho <span class="contador" id="contadorCarrinho" hidden>0</span></a>
+        <div class="menu-conta" id="menuVisitante">
+          <a href="login.html" class="botao botao-contorno">Login</a>
+          <a href="cadastro.html" class="botao">Cadastro</a>
+        </div>
+        <div class="menu-conta" id="menuLogado" hidden>
+          <a href="perfil.html" class="botao botao-contorno" id="linkPerfil">Meu perfil</a>
+          <button class="botao-texto" id="botaoSair">Sair</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="secao">
+      <div class="container">
+        <h1 class="titulo-secao">Carrinho</h1>
+        <p class="subtitulo-secao">Confira os produtos antes de finalizar o pedido.</p>
+
+        <div class="vazio" id="carrinhoVazio" hidden>
+          <strong>Seu carrinho está vazio</strong>
+          Que tal escolher uma pizza?
+          <br><a href="produtos.html" class="botao">Ver cardápio</a>
+        </div>
+
+        <div class="layout-carrinho" id="layoutCarrinho" hidden>
+          <div class="lista-carrinho" id="listaCarrinho"></div>
+
+          <aside class="resumo">
+            <h2>Resumo do pedido</h2>
+            <div class="linha-resumo"><span>Subtotal</span><span id="subtotalCarrinho">R$ 0,00</span></div>
+            <div class="linha-resumo"><span>Entrega</span><span>Grátis</span></div>
+            <div class="linha-resumo linha-total"><span>Total</span><span id="totalCarrinho">R$ 0,00</span></div>
+            <div class="endereco-entrega" id="enderecoEntrega"></div>
+            <button class="botao botao-verde botao-grande botao-bloco" id="botaoFinalizar">Finalizar pedido</button>
+            <a href="produtos.html" class="botao botao-contorno botao-bloco">Continuar comprando</a>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container rodape-conteudo">
+      <div>
+        <h3>Bella Pizza</h3>
+        <p>Pizzas artesanais com massa de fermentação natural, ingredientes selecionados e entrega rápida.</p>
+      </div>
+      <div>
+        <h3>Navegação</h3>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="produtos.html">Cardápio</a></li>
+          <li><a href="carrinho.html">Carrinho</a></li>
+          <li><a href="pedidos.html">Meus pedidos</a></li>
+          <li><a href="perfil.html">Meu perfil</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Atendimento</h3>
+        <ul>
+          <li>Todos os dias</li>
+          <li>18h às 23h30</li>
+          <li><a href="cadastro.html">Criar conta</a></li>
+          <li><a href="login.html">Entrar</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container rodape-final">© 2026 Bella Pizza — Projeto Interdisciplinar</div>
+  </footer>
+</body>
+</html>

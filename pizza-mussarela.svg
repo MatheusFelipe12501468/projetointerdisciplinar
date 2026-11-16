@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <rect width="400" height="400" fill="#f6e3cc"/>
+  <circle cx="200" cy="205" r="178" fill="#000" opacity="0.12"/>
+  <circle cx="200" cy="200" r="175" fill="#c98a45"/>
+  <circle cx="200" cy="200" r="160" fill="#e0a95f"/>
+  <circle cx="200" cy="200" r="148" fill="#c0392b"/>
+  <circle cx="200" cy="200" r="140" fill="#f6d978" opacity="0.92"/>
+  <circle cx="312" cy="168" r="3" fill="#3f7d2c"/><circle cx="233" cy="212" r="3" fill="#3f7d2c"/><circle cx="253" cy="112" r="3" fill="#3f7d2c"/><circle cx="168" cy="142" r="3" fill="#3f7d2c"/><circle cx="126" cy="142" r="3" fill="#3f7d2c"/><circle cx="158" cy="177" r="3" fill="#3f7d2c"/><circle cx="132" cy="232" r="3" fill="#3f7d2c"/><circle cx="180" cy="82" r="3" fill="#3f7d2c"/><circle cx="117" cy="278" r="3" fill="#3f7d2c"/><circle cx="111" cy="186" r="3" fill="#3f7d2c"/><circle cx="180" cy="240" r="3" fill="#3f7d2c"/><circle cx="284" cy="134" r="3" fill="#3f7d2c"/><circle cx="85" cy="207" r="3" fill="#3f7d2c"/><circle cx="212" cy="267" r="3" fill="#3f7d2c"/><circle cx="252" cy="166" r="3" fill="#3f7d2c"/><circle cx="199" cy="171" r="3" fill="#3f7d2c"/>
+  
+</svg>

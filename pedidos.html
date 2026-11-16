@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meus pedidos | Bella Pizza</title>
+  <link rel="icon" href="logo.svg">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body data-pagina="pedidos">
+  <header class="topo">
+    <div class="container topo-conteudo">
+      <a href="index.html" class="logo"><img src="logo.svg" alt="Logo Bella Pizza"> Bella <span>Pizza</span></a>
+      <button class="tema-botao" id="temaBotao" title="Mudar tema">☾</button>
+      <button class="menu-botao" id="menuBotao" title="Menu">☰</button>
+      <nav class="menu" id="menu">
+        <a href="index.html">Início</a>
+        <a href="produtos.html">Cardápio</a>
+        <a href="pedidos.html" class="ativo">Meus pedidos</a>
+        <a href="carrinho.html">Carrinho <span class="contador" id="contadorCarrinho" hidden>0</span></a>
+        <div class="menu-conta" id="menuVisitante">
+          <a href="login.html" class="botao botao-contorno">Login</a>
+          <a href="cadastro.html" class="botao">Cadastro</a>
+        </div>
+        <div class="menu-conta" id="menuLogado" hidden>
+          <a href="perfil.html" class="botao botao-contorno" id="linkPerfil">Meu perfil</a>
+          <button class="botao-texto" id="botaoSair">Sair</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="secao">
+      <div class="container">
+        <h1 class="titulo-secao">Meus pedidos</h1>
+        <p class="subtitulo-secao">Acompanhe os pedidos feitos com a sua conta.</p>
+
+        <div class="info info-sucesso" id="mensagemNovoPedido" hidden></div>
+        <div class="info">O status é atualizado pela pizzaria: <strong>pendente</strong>, <strong>entregue</strong> ou <strong>cancelado</strong>.</div>
+
+        <div class="lista-pedidos" id="listaPedidos"></div>
+
+        <div class="vazio" id="semPedidos" hidden>
+          <strong>Você ainda não fez nenhum pedido</strong>
+          Escolha seus sabores no cardápio.
+          <br><a href="produtos.html" class="botao">Ver cardápio</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container rodape-conteudo">
+      <div>
+        <h3>Bella Pizza</h3>
+        <p>Pizzas artesanais com massa de fermentação natural, ingredientes selecionados e entrega rápida.</p>
+      </div>
+      <div>
+        <h3>Navegação</h3>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="produtos.html">Cardápio</a></li>
+          <li><a href="carrinho.html">Carrinho</a></li>
+          <li><a href="pedidos.html">Meus pedidos</a></li>
+          <li><a href="perfil.html">Meu perfil</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Atendimento</h3>
+        <ul>
+          <li>Todos os dias</li>
+          <li>18h às 23h30</li>
+          <li><a href="cadastro.html">Criar conta</a></li>
+          <li><a href="login.html">Entrar</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container rodape-final">© 2026 Bella Pizza — Projeto Interdisciplinar</div>
+  </footer>
+</body>
+</html>

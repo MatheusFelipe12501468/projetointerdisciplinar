@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <rect width="400" height="400" fill="#f6e3cc"/>
+  <ellipse cx="200" cy="372" rx="70" ry="10" fill="#000" opacity="0.12"/>
+  <rect x="176" y="40" width="48" height="28" rx="6" fill="#1e88e5"/>
+  <path d="M182 68 h36 v40 c0 18 42 30 42 70 v170 c0 14 -10 22 -22 22 h-76 c-12 0 -22 -8 -22 -22 v-170 c0 -40 42 -52 42 -70 z" fill="#a9dcf2"/>
+  <path d="M150 150 c8 -14 22 -20 30 -26" stroke="#fff" stroke-width="8" stroke-linecap="round" fill="none" opacity="0.5"/>
+  <rect x="140" y="210" width="120" height="80" rx="6" fill="#1e88e5"/>
+  <text x="200" y="258" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#fff" text-anchor="middle">ÁGUA</text>
+</svg>
